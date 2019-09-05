@@ -164,7 +164,7 @@
         <p class="lead">On this page you can generate md5 hash online.</p>
         <p class="lead">Learn more about md5 on Wikipedia <a href="https://wikipedia.org/wiki/MD5">wikipedia.org/wiki/MD5</a></p>
         <form method="get">
-            <input class="form-control" name="hash" placeholder="Enter String to hash" value="<?php echo isset($_GET['hash']) ? $_GET['hash'] : ''; ?>">
+            <input autocomplete="off" class="form-control" name="hash" placeholder="Enter String to hash" value="<?php echo isset($_GET['hash']) ? $_GET['hash'] : ''; ?>">
             <br>
             <p class="lead">
                 <button type="submit" class="btn btn-lg btn-secondary">Get Hash</button>
