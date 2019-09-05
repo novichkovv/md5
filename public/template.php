@@ -3,6 +3,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Md5 Hash online generator">
 
@@ -16,11 +17,17 @@
             font-size: 1.125rem;
             text-anchor: middle;
         }
-
+        #hash {
+            font-size: 16px;
+        }
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
             }
+            #hash {
+                font-size: 28px;
+            }
+
         }
 
         /*
@@ -130,8 +137,6 @@
             color: rgba(255, 255, 255, .5);
         }
     </style>
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117922500-2"></script>
     <script>
@@ -174,7 +179,7 @@
             <p class="lead" style="font-size: 24px;">
                 Hash checksum:
             </p>
-            <p class="lead"  style="font-size: 28px;">
+            <p class="lead" id="hash">
                 <?php echo md5($_GET['hash']); ?>
             </p>
         <?php endif; ?>
